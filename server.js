@@ -37,8 +37,7 @@ app.post('/send-otp', (req, res) => {
     const mailOptions = {
         from: 'IIT Palakkad <your.email@gmail.com>',
         to: email,
-        subject: '🔐 Your OTP for IIT Palakkad Portal',
-        bcc: 'admin@iitpkd.ac.in', // ✅ Optional for monitoring
+        subject: '🔐 Your OTP for IIT Palakkad Portal', // ✅ Optional for monitoring
         html: `
             <div style="font-family: Arial, sans-serif; padding: 20px; background: #f2f6ff; border-radius: 10px; border: 1px solid #ddd;">
                 <h2 style="color: #004080;">IIT Palakkad - OTP Verification</h2>
